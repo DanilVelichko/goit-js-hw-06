@@ -22,3 +22,14 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.task03__flexbox {
+  max-width:auto;
+}
+.task03__img_boxes {
+  width: 320px;
+  height: auto;
+}
+.task03__div_color-orange {
+  background-color: orange;
+}

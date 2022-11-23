@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-function createList(option) {
+const createList = option => {
   const list = document.querySelector("ul");
   
   const elements = ingredients.map(option => {
@@ -17,8 +17,7 @@ function createList(option) {
     return item;
   });
 
-  console.log(elements);
-
   list.append(...elements);
-}
+};
+
 createList(ingredients);
