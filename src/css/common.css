@@ -25,6 +25,7 @@ button {
 
 .task03__flexbox {
   max-width:auto;
+  flex-wrap: wrap;
 }
 .task03__img_boxes {
   width: 320px;

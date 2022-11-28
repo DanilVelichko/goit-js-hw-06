@@ -15,7 +15,7 @@ const images = [
 
 const markupImages = (arrImages) => {
   const list = document.querySelector("ul.gallery");
- 
+
   const markup = arrImages
     .map(({ url, alt }) =>
       `<li class="task03__li_boxes">
