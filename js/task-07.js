@@ -1,13 +1,10 @@
 const scrollEl = document.querySelector("input#font-size-control");
 const textEl = document.querySelector("span#text");
 
-console.dir(scrollEl);
-console.log(textEl);
+scrollEl.addEventListener('input', changeFontSize);
 
-scrollEl.addEventListener('ínput', changeFontSize());
-
-function changeFontSize() {
-    const currentFontSize = scrollEl.scrollWidth; //? 
+function changeFontSize(event) {
+    const currentFontSize = event.target.value;
     textEl.setAttribute("style", `font-size: ${currentFontSize}px`);
+    // console.dir(event.target.value);
 }
-
